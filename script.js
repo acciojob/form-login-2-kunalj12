@@ -9,5 +9,5 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   const email = document.getElementById("email").value;
 
   //display form values in alert message
-  alert("Name: " + firstName + " " + lastName + "\nPhone: " + phone + "\nEmail: " + email);
+  alert("FirstName: " + firstName + "\n LastName: "+ lastName + "\nPhone: " + phone + "\nEmail: " + email);
 });
