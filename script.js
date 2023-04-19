@@ -1,9 +1,13 @@
 //your JS code here. If required.
-const firstName = document.getElementById("firstName").value;
-const lastName = document.getElementById("lastName").value;
-const phoneNumber = document.getElementById("phoneNumber").value;
-const email = document.getElementById("email").value;
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault(); //prevent form submission
 
-const result = `Name: ${firstName} ${lastName}\nPhone Number: ${phoneNumber}\nEmail ID: ${email}`;
+  //get form values
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
 
-alert(result);
+  //display form values in alert message
+  alert("Name: " + firstName + " " + lastName + "\nPhone: " + phone + "\nEmail: " + email);
+});

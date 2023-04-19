@@ -7,18 +7,22 @@
 </head>
 
 <body>
-	<label>First Name:</label>
-<input type="text" name="First Name"><br>
+	<form id="myForm">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="First Name" required><br>
 
-<label>Last Name:</label>
-<input type="text" name="Last Name"><br>
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="Last Name" required><br>
 
-<label>Phone Number:</label>
-<input type="tel" name="Phone Number"><br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="Phone Number" required><br>
 
-<label>Email ID:</label>
-<input type="email" name="Email ID"><br>
-	<button>Submit</button>
+  <label for="email">Email ID:</label>
+  <input type="email" id="email" name="Email ID" required><br>
+
+  <input type="submit" value="Submit">
+</form>
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
